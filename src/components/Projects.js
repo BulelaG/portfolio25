@@ -21,7 +21,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-5 bg-light">
+    <section id="projects" className="py-5 border border-danger">
       <Container>
         <h2 className="text-center">Projects</h2>
         <Row>

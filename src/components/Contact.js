@@ -6,7 +6,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5 bg-dark text-light">
+    <section id="contact" className="py-5 border border-danger text-light">
       <Container>
         <h2 className="text-center">Contact Me</h2>
         <Form>
@@ -27,6 +27,7 @@ const Contact = () => {
           </Button>
         </Form>
       </Container>
+
     </section>
   );
 };

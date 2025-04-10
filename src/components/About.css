@@ -1,22 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+
 #about {
-    background-color: #fff;
-    padding: 4rem 0;
+  /* background: linear-gradient(135deg, #356ca2, #e4e7eb); */
+    padding: 4rem 0 4rem 0;
+    font-family: 'Poppins', sans-serif;
+
   }
   
   #about h2 {
-    color: #003366;
     font-size: 2.5rem;
   }
   
   #about img {
-    width: 250px;
-    height: 250px;
-    /* border-radius: 50%; */
+       /* border-radius: 50%; */
     object-fit: cover;
     margin-bottom: 1.5rem;
   }
   
   #about p {
+    padding: 20px 0 20px 0;
     font-size: 1.1rem;
-    color: #666;
   }

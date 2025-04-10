@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
 
 
-  header {
-  background: linear-gradient(135deg, #f1f3f5, #e4e7eb);
+  header 
+  {
+  /* background: linear-gradient(135deg, #356ca2, #e4e7eb); */
   color: white;
-  padding: 200px 50px 0 50px;
+  padding: 80px 8% 0 3%;
   /* font-family: 'Poppins', sans-serif; */
  font-family: 'Poppins', sans-serif;
 
-
   }
-  
+  /* img{
+    object-fit: cover;
+    padding: 0 35% 35% 0 ;
+  } */
+  .hero-msg {
+      padding: 0 0 0 0%;
+  }
+  .display-4{
+    font-family: 'Comfortaa', sans-serif;
+  }
+
+  .display-3 {
+    font-family: 'Comfortaa', sans-serif;
+  }
+
   header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -19,3 +33,21 @@
   header .typed {
     font-size: 1.5rem;
   }
+  /* ------------------ */
+  .wave-emoji {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  

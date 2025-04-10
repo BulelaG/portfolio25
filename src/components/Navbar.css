@@ -6,26 +6,26 @@
 
 }
 
-.navbar-brand {
+/* .navbar-brand {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-}
+} */
 
-.nav-link {
+/* .nav-link {
   float: right;
 
-  color: #fff;
+  color:linear-gradient(135deg, #356ca2, #e4e7eb);
   font-size: 1.1rem;
-}
+} */
 
 
 .nav-link:hover {
   color: #ff9933; /* Hover effect */
 }
 
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
   padding: 0.7rem 0 0.7rem 0 ;
-}
+} */
 
 

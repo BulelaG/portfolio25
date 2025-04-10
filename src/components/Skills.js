@@ -6,7 +6,7 @@ import './Skills.css';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-5 bg-dark text-light">
+    <section id="skills" className="py-5 border border-danger text-light">
       <Container>
         <h2 className="text-center">Skills</h2>
         <div className="my-4">
