@@ -11,9 +11,11 @@ const About = () => {
         <Row className="align-items-center">
           <Col md={6}>
             <img
-              src="../../public/images/profile.png" // Update with your image path
+              width="30%" 
+              height="20%" 
+              src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" 
               alt="Profile"
-              className="img-fluid rounded-circle"
+              className=""
             />
           </Col>
           <Col md={6}>

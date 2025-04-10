@@ -6,11 +6,12 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <header className="vh-100 d-flex align-items-center justify-content-center bg-dark text-light">
-      <div className="text-center">
+    <header className="vh-100   bg-light text-dark">
+      <div className="text">
+        l
         <h1>Welcome to My Portfolio  </h1>
-        <h3>👋🏽 Hi, I’m Bulela Gomoshe  
-🌍 Cape Town-based Web Developer & Web3 Enthusiast  
+        <h3>👋🏽 Hi, I’m Bulela Gomoshe </h3>
+         <h3>🌍 Cape Town-based Web Developer & Web3 Enthusiast  
 I build scalable, elegant solutions for real-world problems — from beautiful front-ends to smart Web3 integrations.
 </h3>
         
