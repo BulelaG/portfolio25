@@ -1,0 +1,22 @@
+#about {
+    background-color: #fff;
+    padding: 4rem 0;
+  }
+  
+  #about h2 {
+    color: #003366;
+    font-size: 2.5rem;
+  }
+  
+  #about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    color: #666;
+  }

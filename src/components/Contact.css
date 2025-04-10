@@ -1,0 +1,30 @@
+#contact {
+    background-color: #003366;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  #contact h2 {
+    color: white;
+  }
+  
+  .form-control {
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  
+  .form-control:focus {
+    border-color: #ff9933;
+    box-shadow: 0 0 5px rgba(255, 153, 51, 0.5);
+  }
+  
+  .btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: #ff9933;
+  }

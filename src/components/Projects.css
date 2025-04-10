@@ -1,0 +1,31 @@
+#projects {
+    background-color: #fff;
+    padding: 4rem 0;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+    border: none;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    background-color: #f4f4f9;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #003366;
+  }
+  
+  .card-text {
+    color: #666;
+  }

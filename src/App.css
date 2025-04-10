@@ -1,11 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* --- */
+/* src/App.css */
+body {
+  font-family: 'Poppins', sans-serif; /* A modern, clean font */
+  background-color: #f4f4f9; /* Light background for overall website */
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #003366; /* Deep blue for headers */
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc; /* Link color */
+}
+
+a:hover {
+  color: #ff9933; /* Hover state */
+}
+
+.btn-primary {
+  background-color: #0066cc; /* Button primary color */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff9933; /* Button hover color */
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +77,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* ---- */
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  #about img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #skills h2, #projects h2, #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    margin-bottom: 2rem;
   }
 }
