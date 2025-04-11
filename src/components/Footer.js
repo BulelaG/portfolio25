@@ -21,14 +21,13 @@ const Footer = () => {
               <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer"><FaXTwitter size={24} /></a>
             </div>
              <p>🌍 Cape Town, South Africa</p>
-             <p>📧 bulelagomoshe1@gmail.com</p>
+             <p>📧 gomoshebulela@gmail.com</p>
           </Col>
         </Row>
 
         {/* Bottom Line */}
-        <hr className="my-4" />
         <div className="text-center small text-primary">
-          © {new Date().getFullYear()} Bulela Gomoshe — Built with 💻 & ☕ using React & Bootstrap
+          © {new Date().getFullYear()} Bulela Gomoshe — Built with 💻 & ☕ 
         </div>
       </Container>
     </footer>

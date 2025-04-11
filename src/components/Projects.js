@@ -70,7 +70,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-5 border border-muted">
+    <section id="projects" className=" border border-muted">
       <Container>
         <h2 className="text-center  title">Projects</h2>
         <Row>

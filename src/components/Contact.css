@@ -35,3 +35,21 @@
     font-family: 'Comfortaa', sans-serif;
 
   }
+  
+  
+  #contact .form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  #contact button[type="submit"] {
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  #contact button:hover {
+    background-color: #0056b3;
+  }
+  
