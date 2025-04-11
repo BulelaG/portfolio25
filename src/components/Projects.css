@@ -28,13 +28,27 @@
   .card-title {
     font-size: 1.5rem;
     color: #003366;
+    min-height: 50px;
   }
   
   .card-text {
     color: #666;
+    min-height: 70px;
+
   }
 
   .title{
     font-family: 'Comfortaa', sans-serif;
 
   }
+
+
+  .project-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
+  

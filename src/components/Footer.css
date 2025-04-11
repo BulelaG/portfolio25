@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
 
-/* .footer {
-    background: linear-gradient(135deg, #f1f3f5, #e4e7eb);
-    color: #333;
-  } */
+footer {
+    /* background: linear-gradient(135deg, #f1f3f5, #e4e7eb); */
+  font-family: 'Poppins', sans-serif;
+} 
   
   .footer a {
-    color: #333;
     text-decoration: none;
   }
   

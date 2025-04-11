@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaLinkedin, FaGithub, FaXTwitter, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
 import './Footer.css';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a>
               <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer"><FaXTwitter size={24} /></a>
             </div>
-             <p>📍 Cape Town, South Africa</p>
+             <p>🌍 Cape Town, South Africa</p>
              <p>📧 bulelagomoshe1@gmail.com</p>
           </Col>
         </Row>
