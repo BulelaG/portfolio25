@@ -4,7 +4,7 @@
     /* background-color: #fff; */
     padding: 4rem 0;
     font-family: 'Poppins', sans-serif;
-  
+
   }
   
   .card {
@@ -32,4 +32,9 @@
   
   .card-text {
     color: #666;
+  }
+
+  .title{
+    font-family: 'Comfortaa', sans-serif;
+
   }

@@ -1,35 +1,115 @@
-// src/components/About.js
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, ProgressBar, Badge } from 'react-bootstrap';
 import './About.css';
-
 
 const About = () => {
   return (
-    <section id="about" className="py-5  border border-danger">
+    <section id="about" className="py-5 text-dark  border border-muted border-bottom-0 ">
       <Container>
-        
-        <Row className="align-items-center">
-        <h2 className='text-center'>About Me</h2>
+        {/* SECTION TITLE */}
+        <h2 className="text-center mb-5 title fw-bold">About Me</h2>
 
-          
+        <Row className="align-items-start">
+          {/* === LEFT: ABOUT === */}
           <Col md={6}>
-            
-            <p>I’m Bulela Gomoshe, a Full-Stack Web Developer and aspiring Web3 innovator based in Cape Town. My journey started with a curiosity for how computers work and evolved into a passion for building meaningful digital solutions.<br></br><br></br>
-
-I’m an entrepreneur at heart — driven by creativity, collaboration, and impact. Hackathons are where I thrive, turning big ideas into working prototypes fast. <br></br><br></br>
-
-With real-world experience in front-end and full-stack projects, I’m now diving deeper into blockchain and Web3, aiming to help shape the future of digital experiences. Let’s connect, code, and build something powerful — together.✨ 
+            <h4 className="fw-semibold mb-2">Who I Am</h4>
+            <p>
+              I’m <strong>Bulela Gomoshe</strong>, a Full-Stack Web Developer and aspiring Web3 innovator based in Cape Town.
+              My journey began with a curiosity for computers, eventually growing into a love for building impactful digital solutions.
             </p>
+            <p>
+              I'm an entrepreneur at heart — resourceful, collaborative, and obsessed with meaningful tech.
+              Hackathons are my playground where I transform ideas into working prototypes, fast.
+            </p>
+            <p>
+              With experience across front-end, back-end, and now exploring Web3, I aim to shape the future of tech through digital inclusion, financial empowerment, and creative code.
+             Whether it’s interfaces or ideas — I build with purpose.
+            </p>
+
+            <p className="fst-italic">
+              “Let’s connect, code, and create something powerful — together.” ✨
+            </p>
+
+            {/* Soft Skills */}
+            <h5 className="mt-5 mb-3 fw-bold">Soft Skills</h5>
+            <div className="d-flex flex-wrap gap-2">
+              <Badge bg="secondary">Problem Solving</Badge>
+              <Badge bg="secondary">Entrepreneurial Mindset</Badge>
+              <Badge bg="secondary">Team Collaboration</Badge>
+              <Badge bg="secondary">Creative Ideation</Badge>
+              <Badge bg="secondary">Adaptability</Badge>
+              <Badge bg="secondary">Communication (EN/XH)</Badge>
+              <Badge bg="secondary">Resilience</Badge>
+              <Badge bg="secondary">Growth-Oriented</Badge>
+            </div>
           </Col>
+
+          {/* === RIGHT: SKILLS === */}
           <Col md={6}>
-          {/* <img
-              width="500" 
-              height="600" 
-              src="../images/dev-gif less-bg.gif" 
-              alt="Profile"
-              className=""
-            /> */}
+            <h4 className="mb-4 fw-semibold text-center">Technical Skills</h4>
+
+            {/* Frontend */}
+            <h6 className="mt-3 text-light">Frontend</h6>
+            <div className="mb-3">
+              <h6>React</h6>
+              <ProgressBar now={80} label="70%" />
+            </div>
+            <div className="mb-3">
+              <h6>Angular</h6>
+              <ProgressBar now={80} label="75%" />
+            </div>
+            <div className="mb-3">
+              <h6>JavaScript</h6>
+              <ProgressBar now={90} label="80%" />
+            </div>
+            <div className="mb-3">
+              <h6>HTML & CSS</h6>
+              <ProgressBar now={85} label="90%" />
+            </div>
+            <div className="mb-3">
+              <h6>Bootstrap </h6>
+              <ProgressBar now={75} label="90%" />
+            </div>
+
+            {/* Backend */}
+            <h6 className="mt-4 text-light">Backend</h6>
+            <div className="mb-3">
+              <h6>Node.js</h6>
+              <ProgressBar now={60} label="60%" />
+            </div>
+            <div className="mb-3">
+              <h6>Express.js</h6>
+              <ProgressBar now={55} label="55%" />
+            </div>
+            <div className="mb-3">
+              <h6>MongoDB / MySQL</h6>
+              <ProgressBar  now={65} label="65%" />
+            </div>
+
+            {/* Web3 */}
+            <h6 className="mt-4 text-light">Blockchain & Web3</h6>
+            <div className="mb-3">
+              <h6>Smart Contract Integration</h6>
+              <ProgressBar now={50} label="50%" />
+            </div>
+            <div className="mb-3">
+              <h6>Decentralized App (dApp) Concepts</h6>
+              <ProgressBar now={60} label="60%" />
+            </div>
+
+            {/* Tools */}
+            <h6 className="mt-4 text-light">Tools & Platforms</h6>
+            <div className="d-flex flex-wrap gap-2 mt-2">
+              <Badge bg="light" text="dark">Git</Badge>
+              <Badge bg="light" text="dark">GitHub</Badge>
+              <Badge bg="light" text="dark">Netlify</Badge>
+              <Badge bg="light" text="dark">Vercel</Badge>
+              <Badge bg="light" text="dark">Figma</Badge>
+              <Badge bg="light" text="dark">Canva</Badge>
+              <Badge bg="light" text="dark">Postman</Badge>
+              <Badge bg="light" text="dark">Jira</Badge>
+              <Badge bg="light" text="dark">Confluence</Badge>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -38,3 +118,101 @@ With real-world experience in front-end and full-stack projects, I’m now divin
 };
 
 export default About;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// src/components/About.js
+// import React from 'react';
+// import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+// import './About.css';
+// import './Skills.css';
+
+
+// const About = () => {
+//   return (
+//     <section id="about" className="py-5  border border-muted border-bottom-0">
+//       <Container>
+        
+//         <Row className="align-items-center">
+//         <h2 className='text-center title'>About Me</h2>
+
+          
+//           <Col md={6}>
+            
+//             <p>I’m Bulela Gomoshe, a Full-Stack Web Developer and aspiring Web3 innovator based in Cape Town. My journey started with a curiosity for how computers work and evolved into a passion for building meaningful digital solutions.<br></br><br></br>
+
+// I’m an entrepreneur at heart — driven by creativity, collaboration, and impact. Hackathons are where I thrive, turning big ideas into working prototypes fast. <br></br><br></br>
+
+// With real-world experience in front-end and full-stack projects, I’m now diving deeper into blockchain and Web3, aiming to help shape the future of digital experiences. Let’s connect, code, and build something powerful — together.✨ 
+//             </p>
+//           </Col>
+//           <Col md={6}>
+//           <div>
+
+//           <section id="skills" className="py-5 text-dark">
+//       <Container>
+//         <h3 className="text-center text-white  skills-h3">Skills</h3>
+
+//         <div className="my-4 text-dark">
+//           <h6 >React</h6>
+//           <ProgressBar now={80} label="80%" />
+//         </div>
+//         <div className="my-4">
+//           <h6>JavaScript</h6>
+//           <ProgressBar now={90} label="90%" />
+//         </div>
+//         <div className="my-4">
+//           <h6>Web3</h6>
+//           <ProgressBar now={75} label="75%" />
+//         </div>
+//         <div className="my-4 text-dark">
+//           <h6 >React</h6>
+//           <ProgressBar now={80} label="80%" />
+//         </div>
+//         <div className="my-4">
+//           <h6>JavaScript</h6>
+//           <ProgressBar now={90} label="90%" />
+//         </div>
+//         <div className="my-4">
+//           <h6>Web3</h6>
+//           <ProgressBar now={75} label="75%" />
+//         </div>
+//       </Container>
+//     </section>
+
+//           </div>
+
+//           <div></div>
+//           </Col>
+//         </Row>
+//       </Container>
+//     </section>
+//   );
+// };
+
+// export default About;

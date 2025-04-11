@@ -7,23 +7,66 @@ import './Projects.css';
 const Projects = () => {
   const projectData = [
     {
-      title: 'Project 1',
+      title: 'Point of Sales App',
       description: 'Description of project 1',
-      image: 'images/project1.png',
+      image: '/src/images/fly-shoe-Ecommerce.png',
       link: '#'
     },
     {
-      title: 'Project 2',
+      title: 'Tutor Platform App',
       description: 'Description of project 2',
-      image: 'images/project2.png',
+      image: '/src/images/thuto-app.png',
+      link: '#'
+    },
+    {
+      title: 'Chatbot App',
+      description: 'Description of project 1',
+      image: '/src/images/chatbot.PNG',
+      link: '#'
+    },
+    {
+      title: 'Weather App',
+      description: 'Description of project 2',
+      image: '/src/images/cityCast.jpeg',
+      link: '#'
+    },
+    {
+      title: 'ScholarFi Dapp',
+      description: 'Description of project 1',
+      image: '/src/images/scholarFi.png',
+      link: '#'
+    },
+    {
+      title: 'Kasi-eco Marketplace App',
+      description: 'Description of project 2',
+      image: '/src/images/Kasi-eCo.jpeg',
+      link: '#'
+    },
+    {
+      title: '  Bank Portal App',
+      description: 'Description of project 1',
+      image: '/src/images/Bank.PNG',
+      link: '#'
+    },
+    {
+      title: 'Metric Converter',
+      description: 'Description of project 2',
+      image: '/src/images/Unit_converter.PNG',
+      link: '#'
+    },
+    {
+      title: 'To-do app',
+      description: 'Description of project 1',
+      image: '/src/images/T-D-L.jpeg',
       link: '#'
     }
+   
   ];
 
   return (
-    <section id="projects" className="py-5 border border-danger">
+    <section id="projects" className="py-5 border border-muted">
       <Container>
-        <h2 className="text-center">Projects</h2>
+        <h2 className="text-center  title">Projects</h2>
         <Row>
           {projectData.map((project, index) => (
             <Col md={4} key={index} className="my-3">

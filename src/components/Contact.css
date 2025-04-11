@@ -2,18 +2,15 @@
 
 #contact {
     /* background-color: #003366; */
-    color: white;
     padding: 4rem 0;
     font-family: 'Poppins', sans-serif;
 
   }
   
-  #contact h2 {
-    color: white;
-  }
+ 
   
   .form-control {
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px 20px;
   }
   
@@ -32,4 +29,9 @@
   
   .btn:hover {
     background-color: #ff9933;
+  }
+
+  .title{
+    font-family: 'Comfortaa', sans-serif;
+
   }

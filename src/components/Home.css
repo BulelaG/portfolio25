@@ -24,6 +24,9 @@
   .display-3 {
     font-family: 'Comfortaa', sans-serif;
   }
+  hr{
+    width:10%;
+  }
 
   header h1 {
     font-size: 3rem;
@@ -49,5 +52,13 @@
     50% { transform: rotate(10deg); }
     60% { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }
+  }
+
+  .wave-emoji:hover {
+    animation: wave 2s;
+  }
+  
+  .once-on-load {
+    animation: wave 2s ease-in-out;
   }
   

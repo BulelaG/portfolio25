@@ -6,20 +6,20 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5 border border-danger text-light">
+    <section id="contact" className="py-5 border border-muted text-light">
       <Container>
-        <h2 className="text-center">Contact Me</h2>
+        <h2 className="text-center text-dark   title">Contact Me</h2>
         <Form>
           <Form.Group>
-            <Form.Label>Name</Form.Label>
+            <Form.Label className='text-dark px-1'>Name</Form.Label>
             <Form.Control type="text" placeholder="Enter your name" />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Email</Form.Label>
+            <Form.Label className='text-dark  px-1' >Email</Form.Label>
             <Form.Control type="email" placeholder="Enter your email" />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Message</Form.Label>
+            <Form.Label className='text-dark  px-1'>Message</Form.Label>
             <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
           </Form.Group>
           <Button variant="primary" type="submit">

@@ -4,11 +4,12 @@
   text-align: center;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #356ca2, #e4e7eb);
+  /* background: linear-gradient(135deg, #356ca2, #e4e7eb); */
 
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -65,7 +66,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
