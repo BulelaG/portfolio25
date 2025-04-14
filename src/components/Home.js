@@ -16,7 +16,7 @@ const Home = () => {
   // }, []);
 
   return (
-    <header className="vh-100  text-dark d-flex align-items-center">
+    <header id="home"  className="vh-100  text-dark d-flex align-items-center">
       <div className="text  px-5 justify-content-between w-100">
 
         {/* Right: Hero message */}
