@@ -35,10 +35,10 @@ const Home = () => {
           <a href="https://linkedin.com/in/bulelag" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} color="#0038b5" />
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/BulelaG" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} color="#000" />
           </a>
-          <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/BulelaGomoshe" target="_blank" rel="noopener noreferrer">
             <FaXTwitter size={30} color="#000" />
           </a>
         </div>

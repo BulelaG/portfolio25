@@ -59,7 +59,7 @@ const Projects = () => {
       title: 'Metric Converter',
       description: 'The Unit Converter is a handy tool that simplifies converting between various measurement units in real-time.',
       image: '../images/images/Unit_converter.PNG',
-      link: 'github.com/BulelaG/Java/tree/main/unitConverter',
+      link: 'https://github.com/BulelaG/Java/tree/main/unitConverter',
       tech: [ 'JAVA']
     },
     {
@@ -99,7 +99,7 @@ const Projects = () => {
                  ))}
                </div>
          
-               <a href={project.link} className="btn btn-outline-info mt-auto" target="_blank" rel="noopener noreferrer"></a>
+               <a href={project.link} className="btn btn-outline-info mt-auto" target="_blank" rel="noopener noreferrer">View Projects</a>
              </Card.Body>
            </Card>
          </Col>
