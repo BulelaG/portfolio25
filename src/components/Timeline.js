@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, ButtonGroup, Button,  Row, Col, Card } from 'react-bootstrap';
+import { Container, ButtonGroup, Button, } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6';
 import './Timeline.css';
