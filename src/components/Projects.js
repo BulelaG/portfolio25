@@ -10,14 +10,14 @@ const Projects = () => {
       title: 'Point of Sales App',
       description: 'An intuitive POS system built for retail operations. It handles inventory management, sales tracking, and receipt generation.',
       image: '../images/images/fly-shoe-Ecommerce.png',
-      link: 'fly-kicks-pos.netlify.app',
+      link: 'https://fly-kicks-pos.netlify.app',
       tech: ['Vue.js', 'Bootstrap', 'Node.js', '']
     },
     {
       title: 'Tutor Platform App',
       description: 'A peer-to-peer tutoring platform that connects learners with verified tutors, featuring booking, profiles, and ratings.',
       image: '../images/images/thuto-app.png',
-      link: 'thuto-platform.netlify.app',
+      link: 'https://thuto-platform.netlify.app',
       tech: ['Vue.js', 'Express.js', 'Bootstrap', 'MongoDB', 'Node.js']
     },
     {
@@ -31,14 +31,14 @@ const Projects = () => {
       title: 'Weather App',
       description: 'CityCast is a weather forecast app that fetches real-time weather data and presents it in a user-friendly interface.',
       image: '../images/images/cityCast.jpeg',
-      link: 'citycastapp.netlify.app',
+      link: 'https://citycastapp.netlify.app',
       tech: ['JavaScript', 'Bootstrap', 'OpenWeatherMap API']
     },
     {
       title: 'ScholarFi Dapp',
       description: 'A decentralized learning platform that rewards learners using blockchain-based smart contracts and learning tokens.',
       image: '../images/images/scholarFi.png',
-      link: 'w3scholar.netlify.app',
+      link: 'https://w3scholar.netlify.app',
       tech: ['Solidity', 'React', 'Ethers.js', 'Bootstrap']
     },
     {
@@ -66,14 +66,14 @@ const Projects = () => {
       title: 'To-do App',
       description: 'A clean and simple task manager built for organizing daily to-dos with the ability to add, check, and delete tasks.',
       image: '../images/images/T-D-L.jpeg',
-      link: 'todo-task100.netlify.app',
+      link: 'https://todo-task100.netlify.app',
       tech: ['Javascript', 'HTML', 'CSS']
     },
     {
       title: 'Restaurant App',
       description: 'Les Chèvres is a beautifully crafted website dedicated to showcasing the exquisite offerings of a French restaurant.',
       image: '../images/images/restu.PNG',
-      link: 'leschevres.netlify.app',
+      link: 'https://leschevres.netlify.app',
       tech: ['HTML', 'CSS', 'JavaScript', "Bootstrap"]
     }
   ];
@@ -99,7 +99,7 @@ const Projects = () => {
                  ))}
                </div>
          
-               <a href={project.link} target='blank' className="btn btn-outline-info mt-auto">View Project</a>
+               <a href={project.link} className="btn btn-outline-info mt-auto" target="_blank" rel="noopener noreferrer"></a>
              </Card.Body>
            </Card>
          </Col>
