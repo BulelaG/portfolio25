@@ -4,7 +4,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5 bg-light border-top">
+    <section id="contact" className=" border-top">
       <Container>
         <h2 className="text-center mb-4 title text-dark">Contact Me</h2>
         <p className="text-center text-muted mb-5">

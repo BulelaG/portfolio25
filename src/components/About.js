@@ -4,15 +4,15 @@ import './About.css';
 
 const About = () => {
   return (
-    <section id="about" className=" text-dark  border border-muted border-bottom-0 ">
+    <section id="about" className=" text-dark bg-light border border-muted border-bottom-0 ">
       <Container>
         {/* SECTION TITLE */}
-        <h2 className="text-center mb-5 title fw-bold">About Me</h2>
+        <h2 className="text-center py-2 mb-5 title ">About Me</h2>
 
         <Row className="align-items-start">
           {/* === LEFT: ABOUT === */}
           <Col md={6}>
-            <h4 className="fw-semibold mb-2">Who I Am</h4>
+            <h4 className="fw-semibold py-2 mb-2">Who I Am</h4>
             <p>
               I’m <strong>Bulela Gomoshe</strong>, a Full-Stack Web Developer and aspiring Web3 innovator based in Cape Town.
               My journey began with a curiosity for computers, eventually growing into a love for building impactful digital solutions.
@@ -49,30 +49,35 @@ const About = () => {
             <h4 className="mb-4 fw-semibold text-center">Technical Skills</h4>
 
             {/* Frontend */}
-            <h6 className="mt-3 text-light">Frontend</h6>
-            <div className="mb-3">
+            <h6 className="mt-3 text-primary
+          ">Frontend</h6>
+            <div className="mb-2">
               <h6>React</h6>
-              <ProgressBar now={80} label="70%" />
+              <ProgressBar now={70} label="70%" />
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
               <h6>Angular</h6>
-              <ProgressBar now={80} label="75%" />
+              <ProgressBar now={75} label="75%" />
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
               <h6>JavaScript</h6>
-              <ProgressBar now={90} label="80%" />
+              <ProgressBar now={80} label="80%" />
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
+              <h6>Python</h6>
+              <ProgressBar now={60} label="60%" />
+            </div>
+            <div className="mb-2">
               <h6>HTML & CSS</h6>
-              <ProgressBar now={85} label="90%" />
+              <ProgressBar now={90} label="90%" />
             </div>
-            <div className="mb-3">
+            <div className="mb-2">
               <h6>Bootstrap </h6>
-              <ProgressBar now={75} label="90%" />
+              <ProgressBar now={90} label="90%" />
             </div>
 
             {/* Backend */}
-            <h6 className="mt-4 text-light">Backend</h6>
+            <h6 className="mt-4 text-primary">Backend</h6>
             <div className="mb-3">
               <h6>Node.js</h6>
               <ProgressBar now={60} label="60%" />
@@ -87,7 +92,7 @@ const About = () => {
             </div>
 
             {/* Web3 */}
-            <h6 className="mt-4 text-light">Blockchain & Web3</h6>
+            <h6 className="mt-4 text-primary">Blockchain & Web3</h6>
             <div className="mb-3">
               <h6>Smart Contract Integration</h6>
               <ProgressBar now={50} label="50%" />
@@ -98,17 +103,17 @@ const About = () => {
             </div>
 
             {/* Tools */}
-            <h6 className="mt-4 text-light">Tools & Platforms</h6>
+            <h6 className="mt-4 text-muted">Tools & Platforms</h6>
             <div className="d-flex flex-wrap gap-2 mt-2">
-              <Badge bg="light" text="dark">Git</Badge>
-              <Badge bg="light" text="dark">GitHub</Badge>
-              <Badge bg="light" text="dark">Netlify</Badge>
-              <Badge bg="light" text="dark">Vercel</Badge>
-              <Badge bg="light" text="dark">Figma</Badge>
-              <Badge bg="light" text="dark">Canva</Badge>
-              <Badge bg="light" text="dark">Postman</Badge>
-              <Badge bg="light" text="dark">Jira</Badge>
-              <Badge bg="light" text="dark">Confluence</Badge>
+              <Badge bg="info" text="dark">Git</Badge>
+              <Badge bg="info" text="dark">GitHub</Badge>
+              <Badge bg="info" text="dark">Netlify</Badge>
+              <Badge bg="info" text="dark">Vercel</Badge>
+              <Badge bg="info" text="dark">Figma</Badge>
+              <Badge bg="info" text="dark">Canva</Badge>
+              <Badge bg="info" text="dark">Postman</Badge>
+              <Badge bg="info" text="dark">Jira</Badge>
+              <Badge bg="info" text="dark">Confluence</Badge>
             </div>
           </Col>
         </Row>

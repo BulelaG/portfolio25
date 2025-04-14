@@ -57,10 +57,10 @@ const Timeline = () => {
   return (
     <section id="timeline" className="py-5 bg-light">
       <Container>
-        <h2 className="text-center mb-4 title">Timeline</h2>
+        <h2 className="text-center py-5  title">Timeline</h2>
 
         {/* Filter Buttons */}
-        <div className="d-flex justify-content-center mb-4">
+        <div className="d-flex justify-content-center ">
           <ButtonGroup>
             <Button variant={filter === 'all' ? 'primary' : 'outline-primary'} onClick={() => setFilter('all')}>All</Button>
             <Button variant={filter === 'experience' ? 'primary' : 'outline-primary'} onClick={() => setFilter('experience')}>Experience</Button>
