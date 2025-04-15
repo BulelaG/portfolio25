@@ -30,6 +30,7 @@ body {
 h1, h2, h3, h4, h5 {
   color: #003366; /* Deep blue for headers */
   font-weight: 700;
+  text-shadow: 2px 2px:
 }
 
 a {
