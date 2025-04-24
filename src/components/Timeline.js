@@ -17,7 +17,7 @@ const timelineData = [
     title: "Web Developer Intern",
     org: "Life Choices Studio",
     icon: <FaBriefcase />,
-    date: "Apr 2022 – Present",
+    date: "Apr 2022 – Jun 2022",
     desc: "Developed user-friendly, responsive websites using modern frameworks.",
     type: "experience"
   },
@@ -43,6 +43,14 @@ const timelineData = [
     icon: <FaGraduationCap />,
     date: "Nov 2023 – Oct 2024",
     desc: "Software & Web Development, professionalism, and systems thinking.",
+    type: "education"
+  },
+  {
+    title: "National Senior Certicicate",
+    org: "Westridge Senior Secondary School",
+    icon: <FaGraduationCap />,
+    date: "Jan 2014 – Dec 2018",
+    desc: "Matric ",
     type: "education"
   },
 ];
