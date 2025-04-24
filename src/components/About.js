@@ -44,7 +44,7 @@ const About = () => {
             </div>
 
             <div className="d-flex py-3 justify-content-start">
-             <a href="/public/Bulela CV Resume.pdf" download>
+             <a href="./Bulela CV Resume.pdf" download>
               <button className="btn bg-dark btn-sm btn-outline-info">
               <b>Download Resume </b>
               </button>
