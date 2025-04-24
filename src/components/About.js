@@ -42,6 +42,14 @@ const About = () => {
               <Badge bg="secondary">Resilience</Badge>
               <Badge bg="secondary">Growth-Oriented</Badge>
             </div>
+
+            <div className="d-flex py-3 justify-content-start">
+             <a href="/public/images/Bulela CV Resume.pdf" download>
+              <button className="btn bg-dark btn-sm btn-outline-info">
+              <b>Download Resume </b>
+              </button>
+             </a>
+             </div>
           </Col>
 
           {/* === RIGHT: SKILLS === */}
