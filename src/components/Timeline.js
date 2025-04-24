@@ -44,15 +44,16 @@ const timelineData = [
     date: "Nov 2023 – Oct 2024",
     desc: "Software & Web Development, professionalism, and systems thinking.",
     type: "education"
-  },
-  {
-    title: "National Senior Certicicate",
-    org: "Westridge Senior Secondary School",
-    icon: <FaGraduationCap />,
-    date: "Jan 2014 – Dec 2018",
-    desc: "Matric ",
-    type: "education"
-  },
+  }
+  // ,
+  // {
+  //   title: "National Senior Certicicate",
+  //   org: "Westridge Senior Secondary School",
+  //   icon: <FaGraduationCap />,
+  //   date: "Jan 2014 – Dec 2018",
+  //   desc: "Matric ",
+  //   type: "education"
+  // },
 ];
 
 const Timeline = () => {
