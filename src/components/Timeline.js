@@ -10,7 +10,7 @@ const timelineData = [
   org: "Clickatell",
   icon: <FaBriefcase />,
   date: "May 2024 – Oct 2024",
-  desc: "Built AI-powered chatbots and collaborated on UI/UX improvements.",
+  desc: "Built WhatsApp/SMS chatbots for big companies and collaborated on UI/UX improvements.",
   type: "experience"
 },
 {
@@ -18,7 +18,7 @@ const timelineData = [
   org: "Celo Africa DAO",
   icon: <FaBriefcase />,
   date: "Jul 2024 – Present",
-  desc: "Contributed to ecosystem growth through hackathons, events, and grassroots community engagement in Southern Africa.",
+  desc: "Contribution to ecosystem growth through hackathons, events, and grassroots community engagement in Southern Africa.",
   type: "experience"
 },
 {
