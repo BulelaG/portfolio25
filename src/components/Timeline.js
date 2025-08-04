@@ -5,46 +5,63 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6';
 import './Timeline.css';
 
 const timelineData = [
-  {
-    title: "CAM Developer",
-    org: "Clickatell",
-    icon: <FaBriefcase />,
-    date: "May 2024 – Oct 2024",
-    desc: "Built AI-powered chatbots and collaborated on UI/UX improvements.",
-    type: "experience"
-  },
-  {
-    title: "Web Developer Intern",
-    org: "Life Choices Studio",
-    icon: <FaBriefcase />,
-    date: "Apr 2022 – Jun 2022",
-    desc: "Developed user-friendly, responsive websites using modern frameworks.",
-    type: "experience"
-  },
-  {
-    title: "Life Choices Academy",
-    org: "Web Dev & Personal Development",
-    icon: <FaGraduationCap />,
-    date: "Sep 2021 – Apr 2022",
-    desc: "Learned web development(MEAN stack), team collaboration, and professional skills.",
-    type: "education"
-  },
-  {
-    title: "Fullstack Web Dev Program",
-    org: "Ayoba Developer Program",
-    icon: <FaGraduationCap />,
-    date: "Mar 2023 – Jul 2023",
-    desc: "MEAN stack development, APIs, agile methods, and microapps.",
-    type: "education"
-  },
-  {
-    title: "Systems Development National Certificate NQF5",
-    org: "CAPACITI (MICT SETA)",
-    icon: <FaGraduationCap />,
-    date: "Nov 2023 – Oct 2024",
-    desc: "Software & Web Development, professionalism, and systems thinking.",
-    type: "education"
-  }
+{
+  title: "CAM Developer",
+  org: "Clickatell",
+  icon: <FaBriefcase />,
+  date: "May 2024 – Oct 2024",
+  desc: "Built AI-powered chatbots and collaborated on UI/UX improvements.",
+  type: "experience"
+},
+{
+  title: "Celo Africa DAO Contributor",
+  org: "Celo Africa DAO",
+  icon: <FaBriefcase />,
+  date: "Jul 2024 – Present",
+  desc: "Contributed to ecosystem growth through hackathons, events, and grassroots community engagement in Southern Africa.",
+  type: "experience"
+},
+{
+  title: "Valora Ambassador",
+  org: "Valora",
+  icon: <FaBriefcase />,
+  date: "Jun 2024 – Present",
+  desc: "Promoting Valora wallet adoption in South Africa through content, community building, and onboarding new crypto users.",
+  type: "experience"
+},
+{
+  title: "Web Developer Intern",
+  org: "Life Choices Studio",
+  icon: <FaBriefcase />,
+  date: "Apr 2022 – Jun 2022",
+  desc: "Developed user-friendly, responsive websites using modern frameworks.",
+  type: "experience"
+},
+{
+  title: "Life Choices Academy",
+  org: "Web Dev & Personal Development",
+  icon: <FaGraduationCap />,
+  date: "Sep 2021 – Apr 2022",
+  desc: "Learned web development (MEAN stack), team collaboration, and professional skills.",
+  type: "education"
+},
+{
+  title: "Fullstack Web Dev Program",
+  org: "Ayoba Developer Program",
+  icon: <FaGraduationCap />,
+  date: "Mar 2023 – Jul 2023",
+  desc: "MEAN stack development, APIs, agile methods, and microapps.",
+  type: "education"
+},
+{
+  title: "Systems Development National Certificate NQF5",
+  org: "CAPACITI (MICT SETA)",
+  icon: <FaGraduationCap />,
+  date: "Nov 2023 – Oct 2024",
+  desc: "Software & Web Development, professionalism, and systems thinking.",
+  type: "education"
+}
+
   // ,
   // {
   //   title: "National Senior Certicicate",
