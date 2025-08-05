@@ -17,7 +17,7 @@ const timelineData = [
   title: "Celo Africa DAO Contributor",
   org: "Celo Africa DAO",
   icon: <FaBriefcase />,
-  date: "Jul 2024 – Present",
+  date: "Jul 2025 – Present",
   desc: "Contribution to ecosystem growth through hackathons, events, and grassroots community engagement in Southern Africa.",
   type: "experience"
 },
@@ -25,7 +25,7 @@ const timelineData = [
   title: "Valora Ambassador",
   org: "Valora",
   icon: <FaBriefcase />,
-  date: "Jun 2024 – Present",
+  date: "Nov 2024 – Present",
   desc: "Promoting Valora wallet adoption in South Africa through content, community building, and onboarding new crypto users.",
   type: "experience"
 },
