@@ -27,6 +27,10 @@ const Home = () => {
         <h3 className="display-3 text-light"> I’m a Web Developer & Web3 Enthusiast</h3>
         <h3>I design & build scalable, elegant solutions for real-world problems — from beautiful front-ends to smart Web3 integrations. </h3>
         </div>
+        <div className="mt-4">
+          <button href="#projects"  className="btn btn-warning me-3">View Projects</button>
+          <button href="#contact"  className="btn btn-outline-light">Contact Me</button> 
+        </div>
         <hr className='text-warning'></hr>
 
         {/* socials */}
