@@ -29,7 +29,7 @@ const Home = () => {
         <h3>I design & build scalable, elegant solutions for real-world problems — from beautiful front-ends to smart Web3 integrations. </h3>
         </div>
         <div className="mt-4">
-          <Link to="/projects" className="btn btn-info me-3">
+          <Link to="/projects" className="btn btn-warning me-3">
             View Projects
           </Link>
 
