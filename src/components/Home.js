@@ -1,5 +1,6 @@
 import React, {  } from 'react';
 import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 
@@ -28,8 +29,13 @@ const Home = () => {
         <h3>I design & build scalable, elegant solutions for real-world problems — from beautiful front-ends to smart Web3 integrations. </h3>
         </div>
         <div className="mt-4">
-          <button href="#projects"  className="btn btn-warning me-3">View Projects</button>
-          <button href="#contact"  className="btn btn-outline-light">Contact Me</button> 
+          <Link to="/projects" className="btn btn-info me-3">
+            View Projects
+          </Link>
+
+          <Link to="/contact" className="btn btn-outline-light">
+            Contact Me
+          </Link>
         </div>
         <hr className='text-warning'></hr>
 
