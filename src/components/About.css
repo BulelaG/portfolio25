@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 #about {
   /* background: linear-gradient(135deg, #356ca2, #e4e7eb); */
     padding: 4rem 0 4rem 0;
     font-family: 'Poppins', sans-serif;
+    animation: softReveal 0.7s ease both;
 
   }
   
@@ -23,7 +24,8 @@
   }
 
   .title{
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 
   }
 
@@ -43,20 +45,33 @@
     padding: 0 0 0 0;
   }
   
-  .progress {
-    height: 10px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .progress-bar {
-    background-color: #0066cc; /* Skill bar color */
-  }
-  
-  .progress-bar-striped {
-    background-color: #ff9933; /* Different color for skill bar hover */
-  }
-  .my-4{
-    width:300px;
+.skill-groups {
+  display: grid;
+  gap: 1rem;
+}
 
-  }
+.skill-group {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 51, 102, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.skill-group:hover {
+  border-color: rgba(0, 51, 102, 0.24);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.skill-group h6 {
+  color: #003366;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#about .badge {
+  border-radius: 999px;
+  font-weight: 500;
+  padding: 0.5rem 0.65rem;
+}

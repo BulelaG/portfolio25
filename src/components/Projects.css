@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 #projects {
     /* background-color: #fff; */
     padding: 4rem 0;
     font-family: 'Poppins', sans-serif;
+    animation: softReveal 0.7s ease both;
 
   }
   
   .card {
-    transition: transform 0.3s ease;
+    border-radius: 8px;
     border: none;
+    overflow: hidden;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    animation: fadeUp 0.65s ease both;
   }
   
   .card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .card .btn {
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+
+  .card .btn:hover {
+    transform: translateY(-1px);
   }
   
   .card-img-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   
   .card-body {
@@ -28,6 +41,7 @@
   .card-title {
     font-size: 1.5rem;
     color: #003366;
+    font-weight: 600;
     min-height: 50px;
   }
   
@@ -38,7 +52,8 @@
   }
 
   .title{
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 
   }
 

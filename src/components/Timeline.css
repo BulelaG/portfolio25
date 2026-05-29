@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .timeline {
   position: relative;
   padding-left: 30px;
   border-left: 3px solid #007bff;
   font-family: 'Poppins', sans-serif;
+  animation: softReveal 0.7s ease both;
 
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: 40px;
+  transition: transform 0.25s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(4px);
 }
 
 .timeline-icon {
@@ -25,6 +31,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+  background: #404566;
+  transform: scale(1.04);
 }
 
 .timeline-date {
@@ -35,6 +47,19 @@
 
 .timeline-content h5 {
   margin-top: 10px;
+  font-weight: 600;
+}
+
+.timeline-content {
+  line-height: 1.65;
+}
+
+.timeline ul {
+  margin-bottom: 0;
+}
+
+.timeline li {
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 576px) {

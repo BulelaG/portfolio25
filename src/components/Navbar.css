@@ -1,8 +1,9 @@
 
 .navbar {
 
-  background-color: #003366; /* Dark blue for the navbar background */
+  background: radial-gradient(circle at top, #404566, #0f172a) !important;
   font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 
@@ -21,7 +22,17 @@
 
 
 .nav-link:hover {
-  color: #3399ff; /* Hover effect */
+  color: #ffffff;
+}
+
+.navbar-brand,
+.nav-link {
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  opacity: 0.86;
 }
 
 /* .navbar-nav .nav-link {

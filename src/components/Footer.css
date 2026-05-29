@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 footer {
-    /* background: linear-gradient(135deg, #f1f3f5, #e4e7eb); */
+  background: radial-gradient(circle at top, #404566, #0f172a);
   font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.78);
 } 
   
   .footer a {
@@ -14,8 +15,8 @@ footer {
   }
   
   .footer svg:hover {
-    transform: scale(1.1);
+    transform: translateY(-2px);
     transition: transform 0.2s ease-in-out;
-    color: #0077b5;
+    color: #ffffff;
   }
   

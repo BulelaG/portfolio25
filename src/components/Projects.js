@@ -3,7 +3,6 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Projects.css';
 
-
 const Projects = () => {
   const projectData = [
     {
@@ -11,7 +10,7 @@ const Projects = () => {
       description: 'An intuitive POS system built for retail operations. It handles inventory management, sales tracking, and receipt generation.',
       image: '../images/images/fly-shoe-Ecommerce.png',
       link: 'https://fly-kicks-pos.netlify.app',
-      tech: ['Vue.js', 'Bootstrap', 'Node.js', '']
+      tech: ['Vue.js', 'Bootstrap', 'Node.js']
     },
     {
       title: 'Tutor Platform App',
@@ -25,7 +24,7 @@ const Projects = () => {
       description: 'MyChat is an advanced chatbot designed to assist users in conducting research on various topics using conversational AI.',
       image: '../images/images/chatbot.PNG',
       link: 'https://mycht.netlify.app',
-      tech: ['Open AI API', 'Node.js', 'Javascript', "Bootstrap"]
+      tech: ['OpenAI API', 'Node.js', 'JavaScript', 'Bootstrap']
     },
     {
       title: 'Weather App',
@@ -60,51 +59,49 @@ const Projects = () => {
       description: 'The Unit Converter is a handy tool that simplifies converting between various measurement units in real-time.',
       image: '../images/images/Unit_converter.PNG',
       link: 'https://github.com/BulelaG/Java/tree/main/unitConverter',
-      tech: [ 'JAVA']
+      tech: ['Java']
     },
     {
       title: 'To-do App',
       description: 'A clean and simple task manager built for organizing daily to-dos with the ability to add, check, and delete tasks.',
       image: '../images/images/T-D-L.jpeg',
       link: 'https://todo-task100.netlify.app',
-      tech: ['Javascript', 'HTML', 'CSS']
+      tech: ['JavaScript', 'HTML', 'CSS']
     },
     {
       title: 'Restaurant App',
-      description: 'Les Chèvres is a beautifully crafted website dedicated to showcasing the exquisite offerings of a French restaurant.',
+      description: 'Les Chevres is a crafted website dedicated to showcasing the offerings of a French restaurant.',
       image: '../images/images/restu.PNG',
       link: 'https://leschevres.netlify.app',
-      tech: ['HTML', 'CSS', 'JavaScript', "Bootstrap"]
+      tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
     }
   ];
-  
 
   return (
-    <section id="projects" className=" border border-muted">
+    <section id="projects" className="border border-muted">
       <Container>
-        <h2 className="text-center  title">Projects</h2>
+        <h2 className="text-center title">Projects</h2>
         <Row>
-          {projectData.map((project, index) => (
-           <Col md={4} key={index} className="my-3 d-flex">
-           <Card className="flex-fill">
-             <Card.Img variant="top" src={project.image} className="project-image" />
-             <Card.Body className="d-flex flex-column">
-               <Card.Title className="card-title">{project.title}</Card.Title>
-               <Card.Text className="card-text">{project.description}</Card.Text>
-         
-               {/* Tech Stack Badges */}
-               <div className="mb-3">
-                 {project.tech && project.tech.map((item, i) => (
-                   <span key={i} className="badge bg-secondary me-2">{item}</span>
-                 ))}
-               </div>
-         
-               <a href={project.link} className="btn btn-outline-info mt-auto" target="_blank" rel="noopener noreferrer">View Projects</a>
-             </Card.Body>
-           </Card>
-         </Col>
-         
-          
+          {projectData.map((project) => (
+            <Col md={4} key={project.title} className="my-3 d-flex">
+              <Card className="flex-fill">
+                <Card.Img variant="top" src={project.image} className="project-image" />
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title className="card-title">{project.title}</Card.Title>
+                  <Card.Text className="card-text">{project.description}</Card.Text>
+
+                  <div className="mb-3">
+                    {project.tech.map((item) => (
+                      <span key={item} className="badge bg-secondary me-2">{item}</span>
+                    ))}
+                  </div>
+
+                  <a href={project.link} className="btn btn-outline-info mt-auto" target="_blank" rel="noopener noreferrer">
+                    View Project
+                  </a>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
         </Row>
       </Container>
