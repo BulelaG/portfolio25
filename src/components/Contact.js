@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <section id="contact" className=" border-top">
       <Container>
-        <h2 className="text-center mb-4 title text-dark">Contact Me</h2>
-        <p className="text-center text-muted mb-5">
+        <h2 className="text-center mb-4 title text-light">Contact Me</h2>
+        <p className="text-center text-light mb-5">
           Got a project idea or just want to say hi? Fill in the form below or reach out directly via email.
         </p>
 
@@ -18,7 +18,7 @@ const Contact = () => {
           method="POST"
         >
           <Form.Group className="mb-4">
-            <Form.Label className="text-dark px-1">Name</Form.Label>
+            <Form.Label className="text-light px-1">Name</Form.Label>
             <Form.Control 
               type="text" 
               name="name" 
@@ -28,7 +28,7 @@ const Contact = () => {
           </Form.Group>
 
           <Form.Group className="mb-4">
-            <Form.Label className="text-dark px-1">Email</Form.Label>
+            <Form.Label className="text-light px-1">Email</Form.Label>
             <Form.Control 
               type="email" 
               name="email" 
@@ -38,7 +38,7 @@ const Contact = () => {
           </Form.Group>
 
           <Form.Group className="mb-4">
-            <Form.Label className="text-dark px-1">Message</Form.Label>
+            <Form.Label className="text-light px-1">Message</Form.Label>
             <Form.Control 
               as="textarea" 
               name="message" 

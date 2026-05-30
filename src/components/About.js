@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'Python', 'MongoDB', 'MySQL', 'REST APIs']
+    skills: ['Node.js', 'Express.js', 'Python','Java', 'MongoDB', 'MySQL', 'REST APIs']
   },
   {
     title: 'Blockchain & Web3',
@@ -17,7 +17,7 @@ const skillGroups = [
   },
   {
     title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'Netlify', 'Vercel', 'Figma', 'Postman', 'Jira', 'Confluence']
+    skills: ['Git', 'GitHub', 'Netlify', 'Vercel', 'Figma', 'Canva', 'Postman', 'Jira', 'Confluence']
   }
 ];
 
@@ -42,7 +42,7 @@ const About = () => {
           <Col md={6}>
             <h4 className="fw-semibold py-2 mb-2">Who I Am</h4>
             <p>
-              I'm <strong>Bulela Gomoshe</strong>, a Full-Stack Web Developer and aspiring Web3 innovator based in Cape Town.
+              I'm <strong>Bulela Gomoshe</strong>, a Full-Stack Developer and Web innovator based in Cape Town.
               My journey began with a curiosity for computers, eventually growing into a love for building impactful digital solutions.
             </p>
             <p>
@@ -52,10 +52,12 @@ const About = () => {
             <p>
               With experience across front-end, back-end, and Web3, I aim to build for digital inclusion, financial empowerment,
               and practical creativity. Whether it's interfaces or ideas, I build with purpose.
+              Currently, I am exploring Blockchain & AI.
             </p>
 
             <p className="fst-italic">
-              "Let's connect, code, and create something powerful - together."
+              
+              Let's connect, code, and create something powerful - together.
             </p>
 
             <h5 className="mt-5 mb-3 fw-bold">Soft Skills</h5>
@@ -80,7 +82,7 @@ const About = () => {
                   <h6>{group.title}</h6>
                   <div className="d-flex flex-wrap gap-2 mt-2">
                     {group.skills.map((skill) => (
-                      <Badge bg="info" text="dark" key={skill}>{skill}</Badge>
+                      <Badge bg="primary" text="light" key={skill}>{skill}</Badge>
                     ))}
                   </div>
                 </div>
