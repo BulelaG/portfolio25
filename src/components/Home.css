@@ -37,13 +37,24 @@
 
   .hero-visual img {
     aspect-ratio: 3 / 2;
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 18px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
     height: auto;
     max-height: 260px;
     object-fit: cover;
+    transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
     width: min(100%, 360px);
+    animation: floatSoft 7s ease-in-out 1s infinite;
+  }
+
+  .hero-visual img:hover {
+    border-color: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px) scale(1.015);
   }
 
   .display-4{
@@ -81,8 +92,21 @@
   .hero-actions .btn {
     border-radius: 12px;
     font-weight: 500;
+    overflow: hidden;
     padding: 10px 20px;
+    position: relative;
     transition: background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+
+  .hero-actions .btn::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+    content: "";
+    height: 140%;
+    left: 0;
+    position: absolute;
+    top: -20%;
+    transform: translateX(-130%) skewX(-18deg);
+    width: 42%;
   }
 
   .hero-actions {
@@ -92,6 +116,10 @@
   .hero-actions .btn:hover {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
     transform: translateY(-2px);
+  }
+
+  .hero-actions .btn:hover::after {
+    animation: glassSweep 0.75s ease;
   }
 
   .socials {

@@ -1,7 +1,9 @@
 
 .navbar {
 
-  background: radial-gradient(circle at top, #404566, #0f172a) !important;
+  background: rgba(15, 23, 42, 0.76) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -22,17 +24,41 @@
 
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #04030f;
 }
 
 .navbar-brand,
 .nav-link {
-  transition: color 0.25s ease, opacity 0.25s ease;
+  border-radius: 999px;
+  position: relative;
+  transition: background-color 0.25s ease, color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.62);
   opacity: 0.86;
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link::after {
+  background: currentColor;
+  border-radius: 999px;
+  bottom: 0.35rem;
+  content: "";
+  height: 2px;
+  left: 1rem;
+  opacity: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  width: calc(100% - 2rem);
+}
+
+.navbar-nav .nav-link:hover::after {
+  opacity: 0.5;
+  transform: scaleX(1);
 }
 
 /* .navbar-nav .nav-link {

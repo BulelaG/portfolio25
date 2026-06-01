@@ -9,16 +9,27 @@
   }
   
   .card {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.72);
     border-radius: 8px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.52);
     overflow: hidden;
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
-    animation: fadeUp 0.65s ease both;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
+
+  #projects .col-md-4:nth-child(2) .card { animation-delay: 0.05s; }
+  #projects .col-md-4:nth-child(3) .card { animation-delay: 0.1s; }
+  #projects .col-md-4:nth-child(4) .card { animation-delay: 0.15s; }
+  #projects .col-md-4:nth-child(5) .card { animation-delay: 0.2s; }
+  #projects .col-md-4:nth-child(6) .card { animation-delay: 0.25s; }
+  #projects .col-md-4:nth-child(n + 7) .card { animation-delay: 0.3s; }
   
   .card:hover {
-    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
-    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16);
+    transform: translateY(-6px);
   }
 
   .card .btn {
@@ -32,10 +43,17 @@
   .card-img-top {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    transition: filter 0.35s ease, transform 0.45s ease;
+    will-change: transform;
+  }
+
+  .card:hover .card-img-top {
+    filter: saturate(1.08) contrast(1.02);
+    transform: scale(1.035);
   }
   
   .card-body {
-    background-color: #f4f4f9;
+    background-color: rgba(244, 244, 249, 0.72);
   }
   
   .card-title {
@@ -43,6 +61,11 @@
     color: #003366;
     font-weight: 600;
     min-height: 50px;
+    transition: color 0.25s ease;
+  }
+
+  .card:hover .card-title {
+    color: #111827;
   }
   
   .card-text {

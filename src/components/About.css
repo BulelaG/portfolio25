@@ -51,17 +51,36 @@
 }
 
 .skill-group {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(0, 51, 102, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.58);
   border-radius: 8px;
   padding: 1rem;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-group::after {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
+  content: "";
+  height: 140%;
+  left: 0;
+  position: absolute;
+  top: -20%;
+  transform: translateX(-130%) skewX(-18deg);
+  width: 34%;
 }
 
 .skill-group:hover {
-  border-color: rgba(0, 51, 102, 0.24);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
-  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.11);
+  transform: translateY(-4px);
+}
+
+.skill-group:hover::after {
+  animation: glassSweep 0.85s ease;
 }
 
 .skill-group h6 {
