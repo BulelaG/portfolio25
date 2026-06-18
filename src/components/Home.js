@@ -8,34 +8,37 @@ const Home = () => {
       <div className="text px-5 justify-content-between w-100">
         <div className="hero-content">
           <div className="hero-msg">
-            <h3 className="display-3 text-light">Hi, I'm Bulela.</h3>
-             <br/>  
+            <h1 className="display-3 text-light">Hi, I'm Bulela.</h1>
+            <br />
             <h3 className="text-light">
-                I build websites, online stores & MVPs 
-                for small to medium businesses, 
-                serving clients across South Africa..
+              I build websites, online stores & business web tools for small to medium businesses,
+              serving clients across South Africa.
             </h3>
-            <p className="text-warning fs-4 fw-semibold">
-               From R2,500.
-            </p>
-            <br/>  
+            <p className="hero-price-note">Starting from R2,500</p>
+            <br />
             <p className="text-warning mt-2 fs-6">
-            📍Based in Cape Town &nbsp;|&nbsp; ⚡ Fast turnaround
+              Based in Cape Town &nbsp;|&nbsp; Fast turnaround
             </p>
+            <div className="hero-proof-strip" aria-label="Portfolio proof points">
+              <span>Hackathon finalist</span>
+              <span>Web3 community</span>
+              <span>Small business websites</span>
+            </div>
           </div>
 
           <div className="hero-visual">
             <img
               src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
-              alt="Developer working at a laptop"
+              alt=""
+              aria-hidden="true"
             />
           </div>
         </div>
 
-        <div className="mt-4 hero-actions"><a
-          
-            href="https://wa.me/27672169078?text=Hi%20Bulela%2C%20I%20need%20a%20website%20or%20chatbot%20for%20my%20business"
-            className="btn btn-outline-success me-3"
+        <div className="mt-4 hero-actions">
+          <a
+            href="https://wa.me/27672169078?text=Hi%20Bulela%2C%20I%20need%20a%20website%2C%20online%20store%2C%20or%20business%20web%20tool"
+            className="btn hero-whatsapp-cta me-3"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +49,6 @@ const Home = () => {
           <a href="#projects" className="btn btn-outline-warning me-3">
             See My Work
           </a>
-    
 
           <a href="#contact" className="btn btn-outline-light">
             Contact Me

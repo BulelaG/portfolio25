@@ -1,170 +1,166 @@
-import React, { useState } from 'react';
-import { Container, ButtonGroup, Button } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6';
+import { FaBriefcase, FaGraduationCap, FaPeopleGroup, FaTrophy } from 'react-icons/fa6';
+import DevWallpaper from './DevWallpaper';
 import './Timeline.css';
 
-const timelineData = [
+const sections = [
   {
-    title: 'CAM Developer',
-    org: 'Clickatell',
+    title: 'Experience',
+    tone: 'experience',
     icon: <FaBriefcase />,
-    date: 'May 2024 - Oct 2024',
-    desc: 'Built WhatsApp/SMS chatbots for enterprise clients and collaborated on UI/UX improvements.',
-    type: 'experience'
+    items: [
+      {
+        title: 'CAM Developer',
+        org: 'Clickatell',
+        date: 'May 2024 - Oct 2024',
+        desc: 'Built WhatsApp/SMS chatbots for enterprise clients and contributed to UI/UX improvements.'
+      },
+      {
+        title: 'Web Developer Intern',
+        org: 'Life Choices Studio',
+        date: 'Apr 2022 - Jun 2022',
+        desc: 'Developed responsive websites and collaborated on frontend delivery.'
+      }
+    ]
   },
   {
-    title: 'Web Developer Intern',
-    org: 'Life Choices Studio',
-    icon: <FaBriefcase />,
-    date: 'Apr 2022 - Jun 2022',
-    desc: 'Developed responsive websites and collaborated on modern frontend solutions.',
-    type: 'experience'
-  },
-  {
-    title: 'Celo Africa DAO Contributor',
-    org: 'Celo Africa DAO',
-    icon: <FaBriefcase />,
-    date: 'Jul 2025 - Nov 2025',
-    desc: 'Driving ecosystem growth through events, hackathons, and community activation.',
-    type: 'volunteering'
-  },
-  {
-    title: 'Valora Ambassador',
-    org: 'Valora',
-    icon: <FaBriefcase />,
-    date: 'Nov 2024 -Nov 2025',
-    desc: 'Promoting Valora wallet adoption in South Africa through education and onboarding.',
-    type: 'volunteering'
-  },
-  {
-    title: 'Content & Community Support',
-    org: 'Stellar Southern Africa Chapter',
-    icon: <FaBriefcase />,
-    date: '2024 - Present',
-    desc: 'Producing content and supporting developer-focused community events.',
-    type: 'volunteering'
-  },
-  {
-    title: 'Crypto Fest 2024 Event Assistant',
-    org: 'Bitcoin Events',
-    icon: <FaBriefcase />,
-    date: 'Oct 2024',
-    desc: 'Welcomed and directed guests, assisted with event logistics and stage management.',
-    type: 'volunteering'
-  },
-  {
-    title: 'WeThinkCode Software Engineering Programme',
-    org: 'WeThinkCode',
+    title: 'Education',
+    tone: 'education',
     icon: <FaGraduationCap />,
-    date: 'Sept 2025 - Present',
-    desc: 'Peer-led, project-based software engineering training with a strong focus on problem-solving and algorithms.',
-    type: 'education'
+    items: [
+      {
+        title: 'WeThinkCode Software Engineering Programme',
+        org: 'WeThinkCode',
+        date: 'Sept 2025 - Present',
+        desc: 'Project-based software engineering training focused on problem-solving and algorithms.'
+      },
+      {
+        title: 'Bitcoin Diploma Course',
+        org: 'Bitcoin Africa Story x My First Bitcoin',
+        date: 'Sept - Oct 2025',
+        desc: 'Covered Bitcoin fundamentals, wallets, money principles, mining, and practical BTC usage.'
+      },
+      {
+        title: 'Systems Development National Certificate NQF5',
+        org: 'CAPACITI / MICT SETA',
+        date: 'Nov 2023 - Oct 2024',
+        desc: 'Studied software development, systems thinking, professionalism, and technical problem solving.'
+      },
+      {
+        title: 'Fullstack Web Dev Program',
+        org: 'Ayoba Developer Program - UCT GSB Solution Space',
+        date: 'Mar 2023 - Jul 2023',
+        desc: 'Built with MEAN stack concepts, APIs, agile workflows, and microapp deployment.'
+      }
+    ]
   },
   {
-    title: 'Bitcoin Diploma Course (7 weeks)',
-    org: 'Bitcoin Africa Story x My First Bitcoin',
-    icon: <FaGraduationCap />,
-    date: 'Sept - Oct 2025',
-    desc: 'Completed a foundational Bitcoin course covering money principles, Bitcoin basics, wallets, mining, and practical BTC usage.',
-    type: 'education'
+    title: 'Community / Web3',
+    tone: 'community',
+    icon: <FaPeopleGroup />,
+    items: [
+      {
+        title: 'Content & Community Support',
+        org: 'Stellar Southern Africa Chapter',
+        date: '2024 - Present',
+        desc: 'Supporting developer-focused community events and producing ecosystem content.'
+      },
+      {
+        title: 'Celo Africa DAO Contributor',
+        org: 'Celo Africa DAO',
+        date: 'Jul 2025 - Nov 2025',
+        desc: 'Supported ecosystem growth through events, hackathons, and community activation.'
+      },
+      {
+        title: 'Valora Ambassador',
+        org: 'Valora',
+        date: 'Nov 2024 - Nov 2025',
+        desc: 'Promoted wallet adoption in South Africa through education and onboarding.'
+      },
+      {
+        title: 'Crypto Fest Event Assistant',
+        org: 'Bitcoin Events',
+        date: 'Oct 2024',
+        desc: 'Assisted with guest direction, event logistics, and stage support.'
+      }
+    ]
+  }
+];
+
+const hackathons = [
+  {
+    result: '2nd Place',
+    tone: 'gold',
+    title: 'EthCapeTown Hackathon 2024',
+    desc: 'Built ScholarFi, a decentralized learning dApp that rewards students.'
   },
   {
-    title: 'Bitcoin Lightning Network Bootcamp (5-Day)',
-    org: 'Free Africa Routing',
-    icon: <FaGraduationCap />,
-    date: 'Feb 2024',
-    desc: 'Hands-on bootcamp covering Lightning Network channels, payments, nodes, and real-world implementation.',
-    type: 'education'
-  },
-  {
-    title: 'Systems Development National Certificate NQF5',
-    org: 'CAPACITI (MICT SETA)',
-    icon: <FaGraduationCap />,
-    date: 'Nov 2023 - Oct 2024',
-    desc: 'Software development, systems thinking, professionalism, and technical problem solving.',
-    type: 'education'
-  },
-  {
-    title: 'Fullstack Web Dev Program',
-    org: 'Ayoba Developer Program - UCT GSB Solution Space',
-    icon: <FaGraduationCap />,
-    date: 'Mar 2023 - Jul 2023',
-    desc: 'MEAN stack development, APIs, agile workflows, and microapp deployment.',
-    type: 'education'
-  },
-  {
-    title: 'Life Choices Academy',
-    org: 'Web Development & Personal Development',
-    icon: <FaGraduationCap />,
-    date: 'Sep 2021 - May 2022',
-    desc: 'MEVN stack foundations, professional development, teamwork, and real-world projects.',
-    type: 'education'
+    result: '3rd Place',
+    tone: 'blue',
+    title: 'Ocean Hub Africa Hackathon 2025',
+    desc: 'Built Blue Pulse for the Loco for Impact Challenge, connecting software with LoCo AUV devices for aquafarming.'
   }
 ];
 
 const Timeline = () => {
-  const [filter, setFilter] = useState('all');
-
-  const filteredTimeline = timelineData.filter((item) =>
-    filter === 'all' ? true : item.type === filter
-  );
-
   return (
     <section id="timeline" className="py-5 bg-light">
+      <DevWallpaper variant="timeline" />
       <Container>
         <h2 className="text-center py-5 title">Timeline</h2>
 
-        <div className="d-flex justify-content-center mb-4">
-          <ButtonGroup>
-            <Button variant={filter === 'all' ? 'primary' : 'outline-primary'} onClick={() => setFilter('all')}>
-              All
-            </Button>
-            <Button variant={filter === 'experience' ? 'primary' : 'outline-primary'} onClick={() => setFilter('experience')}>
-              Experience
-            </Button>
-            <Button variant={filter === 'education' ? 'primary' : 'outline-primary'} onClick={() => setFilter('education')}>
-              Education
-            </Button>
-            <Button variant={filter === 'volunteering' ? 'primary' : 'outline-primary'} onClick={() => setFilter('volunteering')}>
-              Volunteering
-            </Button>
-          </ButtonGroup>
-        </div>
+        <Row className="g-4">
+          {sections.map((section) => (
+            <Col lg={4} key={section.title}>
+              <section className={`timeline-panel timeline-panel-${section.tone}`}>
+                <div className="timeline-heading">
+                  <span>{section.icon}</span>
+                  <h3>{section.title}</h3>
+                </div>
 
-        <div className="timeline">
-          {filteredTimeline.map((item) => (
-            <motion.div
-              className="timeline-item"
-              key={`${item.title}-${item.date}`}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="timeline-icon">{item.icon}</div>
-              <div className="timeline-content">
-                <span className="timeline-date">{item.date}</span>
-                <h5 className="fw-bold mb-1">{item.title}</h5>
-                <h6 className="text-muted">{item.org}</h6>
-                <p>{item.desc}</p>
-              </div>
-            </motion.div>
+                <div className="timeline">
+                  {section.items.map((item) => (
+                    <motion.div
+                      className="timeline-item"
+                      key={`${item.title}-${item.date}`}
+                      initial={{ opacity: 0, y: 24 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      <div className="timeline-icon">{section.icon}</div>
+                      <div className="timeline-content">
+                        <span className="timeline-date">{item.date}</span>
+                        <h5>{item.title}</h5>
+                        <h6 className="text-muted">{item.org}</h6>
+                        <p>{item.desc}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </section>
+            </Col>
           ))}
-        </div>
+        </Row>
 
-        <section className="timeline mt-5">
-          <h3 className="text-center mb-3 title">Hackathons</h3>
-          <ul>
-            <li>
-              <strong>EthCapeTown Hackathon 2024 - 2nd Place</strong><br />
-              Built ScholarFi, a decentralized learning dApp that rewards students.
-            </li>
-            <li>
-              <strong>Ocean Hub Africa Hackathon 2025 - 3rd Place</strong><br />
-              Loco for Impact Challenge - built Blue Pulse, a solution for aquafarming using software and LoCo AUV devices.
-            </li>
-          </ul>
+        <section className="hackathon-proof">
+          <div className="timeline-heading justify-content-center">
+            <span><FaTrophy /></span>
+            <h3>Hackathons</h3>
+          </div>
+          <Row className="g-3">
+            {hackathons.map((item) => (
+              <Col md={6} key={item.title}>
+                <article className={`proof-card proof-card-${item.tone}`}>
+                  <span>{item.result}</span>
+                  <h4>{item.title}</h4>
+                  <p>{item.desc}</p>
+                </article>
+              </Col>
+            ))}
+          </Row>
         </section>
       </Container>
     </section>

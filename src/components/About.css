@@ -2,14 +2,36 @@
 
 #about {
   /* background: linear-gradient(135deg, #356ca2, #e4e7eb); */
+    background:
+      var(--dev-wallpaper),
+      var(--light-section-bg) !important;
+    background-size: 54px 54px, 54px 54px, 44px 44px, auto, auto;
+    background-size: auto, 220% 220%;
     padding: 4rem 0 4rem 0;
     font-family: 'Poppins', sans-serif;
-    animation: softReveal 0.7s ease both;
+    animation: softReveal 0.7s ease both, ambientShade 18s ease-in-out infinite;
+    overflow: hidden;
+    position: relative;
 
+  }
+
+  #about::before {
+    background: linear-gradient(90deg, var(--accent), rgba(0, 102, 204, 0.35), transparent);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  #about .container {
+    position: relative;
+    z-index: 1;
   }
   
   #about h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 3vw, 2.15rem);
   }
   
   #about img {
@@ -19,14 +41,36 @@
   }
   
   #about p {
-    padding: 20px 0 20px 0;
-    font-size: 1.1rem;
+    padding: 0 0 1rem 0;
+    font-size: 1rem;
+  }
+
+  .about-summary {
+    text-align: left;
+  }
+
+  .about-lead {
+    color: var(--text-strong);
+    font-size: 1.12rem !important;
+    font-weight: 400;
+    line-height: 1.65;
   }
 
   .title{
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    position: relative;
 
+  }
+
+  #about .title::after {
+    background: linear-gradient(90deg, var(--accent), rgba(0, 102, 204, 0.4));
+    border-radius: 999px;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 0.75rem auto 0;
+    width: 42px;
   }
 
   /* --------------- */
@@ -53,13 +97,26 @@
 .skill-group {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.58);
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  background:
+    linear-gradient(180deg, rgba(241, 245, 249, 0.88), rgba(219, 228, 238, 0.78)),
+    rgba(255, 255, 255, 0.68);
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
   padding: 1rem;
   position: relative;
   overflow: hidden;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.055);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  animation: liftIn 0.65s ease both;
+}
+
+.skill-group:nth-child(2) { animation-delay: 0.06s; }
+.skill-group:nth-child(3) { animation-delay: 0.12s; }
+.skill-group:nth-child(4) { animation-delay: 0.18s; }
+
+.skill-group > * {
+  position: relative;
+  z-index: 1;
 }
 
 .skill-group::after {
@@ -73,10 +130,24 @@
   width: 34%;
 }
 
+.skill-group::before {
+  background: radial-gradient(circle at 18% 0%, rgba(0, 102, 204, 0.16), transparent 32%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
 .skill-group:hover {
-  border-color: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.11);
-  transform: translateY(-4px);
+  border-color: rgba(255, 153, 51, 0.42);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.14), 0 0 0 1px rgba(255, 153, 51, 0.1);
+  transform: translateY(-7px) rotate(-0.25deg);
+}
+
+.skill-group:hover::before {
+  opacity: 1;
 }
 
 .skill-group:hover::after {
@@ -84,13 +155,13 @@
 }
 
 .skill-group h6 {
-  color: #003366;
-  font-weight: 600;
+  color: var(--text-strong);
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 #about .badge {
   border-radius: 999px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.5rem 0.65rem;
 }
