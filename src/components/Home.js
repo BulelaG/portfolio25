@@ -14,7 +14,7 @@ const Home = () => {
               I build websites, online stores & business web tools for small to medium businesses,
               serving clients across South Africa.
             </h3>
-            <p className="hero-price-note">Starting from R2,500</p>
+            {/* <p className="hero-price-note">Starting from R2,500</p> */}
             <br />
             <p className="text-warning mt-2 fs-6">
               Based in Cape Town &nbsp;|&nbsp; Fast turnaround
